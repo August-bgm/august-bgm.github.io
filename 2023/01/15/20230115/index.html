@@ -1,207 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+{% extends '_layout.swig' %}
+{% import '_macro/post.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-  
-  <title>All about Inoru</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="注：本文为博客测试+自我介绍初次见面的人初次见面，好久不见的人好久不见。我是Inoru。这篇想和大家讲讲自己的一些情况：##名字首先是名字，Inoru这个名字其实是日文名字发生器上爬下来的，感觉很好听就沿用了（笑）目前可供使用的有三个：祈留&#x2F;Inoru&#x2F;いのる。似乎没什么特别含义，但是日文里「いのる」可以写作「祈る」，是祈祷的意思。##二次元姑且是个看番的，也是个东方厨和VO">
-<meta property="og:type" content="article">
-<meta property="og:title" content="All about Inoru">
-<meta property="og:url" content="https://august-bgm.github.io/project/2023/01/15/20230115/index.html">
-<meta property="og:site_name" content="All about Inoru">
-<meta property="og:description" content="注：本文为博客测试+自我介绍初次见面的人初次见面，好久不见的人好久不见。我是Inoru。这篇想和大家讲讲自己的一些情况：##名字首先是名字，Inoru这个名字其实是日文名字发生器上爬下来的，感觉很好听就沿用了（笑）目前可供使用的有三个：祈留&#x2F;Inoru&#x2F;いのる。似乎没什么特别含义，但是日文里「いのる」可以写作「祈る」，是祈祷的意思。##二次元姑且是个看番的，也是个东方厨和VO">
-<meta property="og:locale">
-<meta property="article:published_time" content="2023-01-15T09:45:18.286Z">
-<meta property="article:modified_time" content="2023-01-15T09:45:18.286Z">
-<meta property="article:author" content="Inoru">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/project/atom.xml" title="All about Inoru" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/project/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.2"></head>
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/project/" id="logo">All about Inoru</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/project/">Home</a>
-        
-          <a class="main-nav-link" href="/project/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/project/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://august-bgm.github.io/project"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-20230115" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/project/2023/01/15/20230115/" class="article-date">
-  <time datetime="2023-01-15T09:45:18.286Z" itemprop="datePublished">2023-01-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>注：本文为博客测试+自我介绍<br>初次见面的人初次见面，好久不见的人好久不见。我是Inoru。<br>这篇想和大家讲讲自己的一些情况：<br>##名字<br>首先是名字，Inoru这个名字其实是日文名字发生器上爬下来的，感觉很好听就沿用了（笑）目前可供使用的有三个：祈留&#x2F;Inoru&#x2F;いのる。似乎没什么特别含义，但是日文里「いのる」可以写作「祈る」，是祈祷的意思。<br>##二次元<br>姑且是个看番的，也是个东方厨和VOCALOID厨，无可救药的萝莉控（<br>##年龄<br>年龄……？今年15岁，还在上学（废话<br>##梦想<br>最近突然想到有很多梦想要实现。想作曲、写文…..不过，大多数活动都是上网课摸鱼的结果，比如这个网站（<br>（我发誓，上课再也不摸鱼了）(￣ω￣;)<br>也是最近的想法，梦想要尽早实现，因为想当天才，不想当庸才。<br>##其它<br>是学校重点班的班长，这点本来不值得说道，姑且写上吧（凑字数）<br>被老师冤枉了，顶了几句嘴，心态爆炸，打算考全年级第一报仇（（（<br>那就这样？我得去休息一下了，顺便完善一下博客。<br>那就再见了~<br>                                                                                                                               Inoru<br>                                                                                                                             2023.1.12</p>
-</blockquote>
+{% block page_class %}page-post-detail{% endblock %}
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://august-bgm.github.io/project/2023/01/15/20230115/" data-id="cljz2vfg700013oqwe7ysagp2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/project/2023/02/02/20230202/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/project/2023/01/13/%E6%9C%AA%E5%91%BD%E5%90%8D/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
-    </a>
-  
-</nav>
 
-  
-</article>
+{% block content %}
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+  <div id="posts" class="posts-expand">
+    {{ post_template.render(page) }}
 
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/project/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/project/archives/2023/01/">January 2023</a></li></ul>
+    <div class="post-spread">
+      {% if theme.jiathis %}
+        {% include '_partials/share/jiathis.swig' %}
+      {% elseif theme.baidushare %}
+        {% include '_partials/share/baidushare.swig' %}
+      {% elseif theme.add_this_id %}
+        {% include '_partials/share/add-this.swig' %}
+      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
+        {% include '_partials/share/duoshuo_share.swig' %}
+      {% endif %}
     </div>
   </div>
 
+{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/project/2023/02/02/20230202/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/project/2023/01/15/20230115/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/project/2023/01/13/%E6%9C%AA%E5%91%BD%E5%90%8D/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/project/2023/01/11/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2023 Inoru<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/project/" class="mobile-nav-link">Home</a>
-  
-    <a href="/project/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/project/fancybox/jquery.fancybox.css">
-
-  
-<script src="/project/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/project/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+{% block script_extra %}
+  {% include '_scripts/pages/post-details.swig' %}
+{% endblock %}
